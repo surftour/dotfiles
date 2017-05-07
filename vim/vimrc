@@ -1,0 +1,17 @@
+
+set title
+set bs=2
+set ruler
+
+syntax on
+
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+augroup filetypedetect
+  au BufNewFile,BufRead *.pig set filetype=pig syntax=pig
+augroup END
+
+
