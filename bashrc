@@ -1,4 +1,8 @@
 
+# guards against problems with scp
+if [ -z "$PS1" ]; then
+    return
+fi
 
 alias ls='ls -G'
 alias ll='ls -Gl'
